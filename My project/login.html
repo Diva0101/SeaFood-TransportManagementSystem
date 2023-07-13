@@ -1,0 +1,124 @@
+
+<!DOCTYPE>
+<html>
+<head>
+<title>Login</title>
+</head>
+<style>
+body
+  {
+   background: url(img4.AVIF);
+   background-position: center;
+   background-size: cover;
+   background repeat:no-repeat;
+   
+  }
+.loginbox{
+    width: 220px;
+    height: 445px;
+    top: 50%;
+    left: 15%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+          }
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+       }
+h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 22px;
+  }
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginbox input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+.loginbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background:  blue;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="button"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="button"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: blue;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: white;
+    color: #000;
+}
+.loginbox input[type="button"]:hover{
+    cursor: pointer;
+    background: white;
+    color: #000;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;}
+
+</style>
+<body>
+<div class="loginbox">
+    <img src="admin3.png" class="avatar">
+    <h1>Admin Login</h1>
+    <br>	
+    <form action="login01.php" method="POST">
+        <p>User Name</p>
+        <input type="text" name="uname" placeholder="Enter your Name" required="">
+        <p>Password</p>
+        <input type="password" name="upswd" placeholder="Enter password" required=""><br><br>
+        <div id="errorBox"></div>
+        <input type="submit" name="" value="Login"><br>                       
+    </form>	
+
+</div>
+</body>
+</html>
